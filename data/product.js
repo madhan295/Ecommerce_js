@@ -9,7 +9,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Top Seller",
-      color: "#ff9900"
+      color: "#ff9900",
+      fontColor: "#000000"
     }
   },
   {
@@ -22,7 +23,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Only 3 left",
-      color: "#cc0000"
+      color: "#cc0000",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -35,7 +37,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Best Value",
-      color: "#009900"
+      color: "#009900",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -48,7 +51,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "New Arrival",
-      color: "#0066cc"
+      color: "#0066cc",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -61,7 +65,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Trending",
-      color: "#ff0099"
+      color: "#ff0099",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -74,7 +79,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Limited Edition",
-      color: "#6600cc"
+      color: "#6600cc",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -87,7 +93,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Deal of the Day",
-      color: "#e60000"
+      color: "#e60000",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -100,7 +107,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Popular",
-      color: "#ff6600"
+      color: "#ff6600",
+      fontColor: "#000000"
     }
   },
   {
@@ -113,7 +121,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Top Seller",
-      color: "#ff9900"
+      color: "#ff9900",
+      fontColor: "#000000"
     }
   },
   {
@@ -126,7 +135,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1576995853123-5a10305d93c0?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Only 3 left",
-      color: "#cc0000"
+      color: "#cc0000",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -139,7 +149,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Best Value",
-      color: "#009900"
+      color: "#009900",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -152,7 +163,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "New Arrival",
-      color: "#0066cc"
+      color: "#0066cc",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -165,7 +177,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Trending",
-      color: "#ff0099"
+      color: "#ff0099",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -178,7 +191,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Limited Edition",
-      color: "#6600cc"
+      color: "#6600cc",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -191,7 +205,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Deal of the Day",
-      color: "#e60000"
+      color: "#e60000",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -204,7 +219,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1552902865-b72c031ac5ea?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Popular",
-      color: "#ff6600"
+      color: "#ff6600",
+      fontColor: "#000000"
     }
   },
   {
@@ -217,7 +233,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Top Seller",
-      color: "#ff9900"
+      color: "#ff9900",
+      fontColor: "#000000"
     }
   },
   {
@@ -230,7 +247,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Only 3 left",
-      color: "#cc0000"
+      color: "#cc0000",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -243,7 +261,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Best Value",
-      color: "#009900"
+      color: "#009900",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -256,7 +275,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "New Arrival",
-      color: "#0066cc"
+      color: "#0066cc",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -269,7 +289,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1638247025967-b4e38f787b76?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Trending",
-      color: "#ff0099"
+      color: "#ff0099",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -282,7 +303,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Limited Edition",
-      color: "#6600cc"
+      color: "#6600cc",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -295,7 +317,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Deal of the Day",
-      color: "#e60000"
+      color: "#e60000",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -308,7 +331,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Popular",
-      color: "#ff6600"
+      color: "#ff6600",
+      fontColor: "#000000"
     }
   },
   {
@@ -321,7 +345,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Top Seller",
-      color: "#ff9900"
+      color: "#ff9900",
+      fontColor: "#000000"
     }
   },
   {
@@ -334,7 +359,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Only 3 left",
-      color: "#cc0000"
+      color: "#cc0000",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -347,7 +373,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1603808033192-082d6919d3e1?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Best Value",
-      color: "#009900"
+      color: "#009900",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -360,7 +387,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "New Arrival",
-      color: "#0066cc"
+      color: "#0066cc",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -373,7 +401,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Trending",
-      color: "#ff0099"
+      color: "#ff0099",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -386,7 +415,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Limited Edition",
-      color: "#6600cc"
+      color: "#6600cc",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -399,7 +429,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Deal of the Day",
-      color: "#e60000"
+      color: "#e60000",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -412,7 +443,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Popular",
-      color: "#ff6600"
+      color: "#ff6600",
+      fontColor: "#000000"
     }
   },
   {
@@ -425,7 +457,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Top Seller",
-      color: "#ff9900"
+      color: "#ff9900",
+      fontColor: "#000000"
     }
   },
   {
@@ -438,7 +471,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Only 3 left",
-      color: "#cc0000"
+      color: "#cc0000",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -451,7 +485,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Best Value",
-      color: "#009900"
+      color: "#009900",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -464,7 +499,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1547949003-9792a18a2601?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "New Arrival",
-      color: "#0066cc"
+      color: "#0066cc",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -477,7 +513,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Trending",
-      color: "#ff0099"
+      color: "#ff0099",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -490,7 +527,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Limited Edition",
-      color: "#6600cc"
+      color: "#6600cc",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -503,7 +541,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Deal of the Day",
-      color: "#e60000"
+      color: "#e60000",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -516,7 +555,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Popular",
-      color: "#ff6600"
+      color: "#ff6600",
+      fontColor: "#000000"
     }
   },
   {
@@ -529,7 +569,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Top Seller",
-      color: "#ff9900"
+      color: "#ff9900",
+      fontColor: "#000000"
     }
   },
   {
@@ -542,7 +583,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Only 3 left",
-      color: "#cc0000"
+      color: "#cc0000",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -555,7 +597,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Best Value",
-      color: "#009900"
+      color: "#009900",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -568,7 +611,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "New Arrival",
-      color: "#0066cc"
+      color: "#0066cc",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -581,7 +625,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Trending",
-      color: "#ff0099"
+      color: "#ff0099",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -594,7 +639,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Limited Edition",
-      color: "#6600cc"
+      color: "#6600cc",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -607,7 +653,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Deal of the Day",
-      color: "#e60000"
+      color: "#e60000",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -620,7 +667,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Popular",
-      color: "#ff6600"
+      color: "#ff6600",
+      fontColor: "#000000"
     }
   },
   {
@@ -633,7 +681,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Top Seller",
-      color: "#ff9900"
+      color: "#ff9900",
+      fontColor: "#000000"
     }
   },
   {
@@ -646,7 +695,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Only 3 left",
-      color: "#cc0000"
+      color: "#cc0000",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -659,7 +709,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1598662957563-ee4965d4d72c?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Best Value",
-      color: "#009900"
+      color: "#009900",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -672,7 +723,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "New Arrival",
-      color: "#0066cc"
+      color: "#0066cc",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -685,7 +737,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Trending",
-      color: "#ff0099"
+      color: "#ff0099",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -698,7 +751,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Limited Edition",
-      color: "#6600cc"
+      color: "#6600cc",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -711,7 +765,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Deal of the Day",
-      color: "#e60000"
+      color: "#e60000",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -724,7 +779,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1590658006821-04f4008d5717?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Popular",
-      color: "#ff6600"
+      color: "#ff6600",
+      fontColor: "#000000"
     }
   },
   {
@@ -737,7 +793,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1588508065123-287b28e013da?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Top Seller",
-      color: "#ff9900"
+      color: "#ff9900",
+      fontColor: "#000000"
     }
   },
   {
@@ -750,7 +807,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1543512214-318c7553f230?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Only 3 left",
-      color: "#cc0000"
+      color: "#cc0000",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -763,7 +821,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1625842268584-8f3296236761?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Best Value",
-      color: "#009900"
+      color: "#009900",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -776,7 +835,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1616440347437-b1c73416efc2?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "New Arrival",
-      color: "#0066cc"
+      color: "#0066cc",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -789,7 +849,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1589739900243-4b52cd9b104e?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Trending",
-      color: "#ff0099"
+      color: "#ff0099",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -802,7 +863,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Limited Edition",
-      color: "#6600cc"
+      color: "#6600cc",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -815,7 +877,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Deal of the Day",
-      color: "#e60000"
+      color: "#e60000",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -828,7 +891,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Popular",
-      color: "#ff6600"
+      color: "#ff6600",
+      fontColor: "#000000"
     }
   },
   {
@@ -841,7 +905,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Top Seller",
-      color: "#ff9900"
+      color: "#ff9900",
+      fontColor: "#000000"
     }
   },
   {
@@ -854,7 +919,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Only 3 left",
-      color: "#cc0000"
+      color: "#cc0000",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -867,7 +933,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1517445312882-bc9910d016b7?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Best Value",
-      color: "#009900"
+      color: "#009900",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -880,7 +947,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "New Arrival",
-      color: "#0066cc"
+      color: "#0066cc",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -893,7 +961,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Trending",
-      color: "#ff0099"
+      color: "#ff0099",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -906,7 +975,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1618354691229-88d47f285158?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Limited Edition",
-      color: "#6600cc"
+      color: "#6600cc",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -919,7 +989,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Deal of the Day",
-      color: "#e60000"
+      color: "#e60000",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -932,7 +1003,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Popular",
-      color: "#ff6600"
+      color: "#ff6600",
+      fontColor: "#000000"
     }
   },
   {
@@ -945,7 +1017,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Top Seller",
-      color: "#ff9900"
+      color: "#ff9900",
+      fontColor: "#000000"
     }
   },
   {
@@ -958,7 +1031,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Only 3 left",
-      color: "#cc0000"
+      color: "#cc0000",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -971,7 +1045,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Best Value",
-      color: "#009900"
+      color: "#009900",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -984,7 +1059,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "New Arrival",
-      color: "#0066cc"
+      color: "#0066cc",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -997,7 +1073,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Trending",
-      color: "#ff0099"
+      color: "#ff0099",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -1010,7 +1087,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Limited Edition",
-      color: "#6600cc"
+      color: "#6600cc",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -1023,7 +1101,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1562183241-b937e95585b6?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Deal of the Day",
-      color: "#e60000"
+      color: "#e60000",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -1036,7 +1115,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1542840410-3092f99611a3?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Popular",
-      color: "#ff6600"
+      color: "#ff6600",
+      fontColor: "#000000"
     }
   },
   {
@@ -1049,7 +1129,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1603808033192-082d6919d3e1?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Top Seller",
-      color: "#ff9900"
+      color: "#ff9900",
+      fontColor: "#000000"
     }
   },
   {
@@ -1062,7 +1143,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Only 3 left",
-      color: "#cc0000"
+      color: "#cc0000",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -1075,7 +1157,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Best Value",
-      color: "#009900"
+      color: "#009900",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -1088,7 +1171,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "New Arrival",
-      color: "#0066cc"
+      color: "#0066cc",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -1101,7 +1185,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Trending",
-      color: "#ff0099"
+      color: "#ff0099",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -1114,7 +1199,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Limited Edition",
-      color: "#6600cc"
+      color: "#6600cc",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -1127,7 +1213,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Deal of the Day",
-      color: "#e60000"
+      color: "#e60000",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -1140,7 +1227,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Popular",
-      color: "#ff6600"
+      color: "#ff6600",
+      fontColor: "#000000"
     }
   },
   {
@@ -1153,7 +1241,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Top Seller",
-      color: "#ff9900"
+      color: "#ff9900",
+      fontColor: "#000000"
     }
   },
   {
@@ -1166,7 +1255,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Only 3 left",
-      color: "#cc0000"
+      color: "#cc0000",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -1179,7 +1269,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Best Value",
-      color: "#009900"
+      color: "#009900",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -1192,7 +1283,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "New Arrival",
-      color: "#0066cc"
+      color: "#0066cc",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -1205,7 +1297,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1508296695146-257a814070b4?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Trending",
-      color: "#ff0099"
+      color: "#ff0099",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -1218,7 +1311,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Limited Edition",
-      color: "#6600cc"
+      color: "#6600cc",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -1231,7 +1325,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1600121848594-d8644e57abab?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Deal of the Day",
-      color: "#e60000"
+      color: "#e60000",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -1244,7 +1339,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1581783342308-f792dbdd27c5?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Popular",
-      color: "#ff6600"
+      color: "#ff6600",
+      fontColor: "#000000"
     }
   },
   {
@@ -1257,7 +1353,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Top Seller",
-      color: "#ff9900"
+      color: "#ff9900",
+      fontColor: "#000000"
     }
   },
   {
@@ -1270,7 +1367,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Only 3 left",
-      color: "#cc0000"
+      color: "#cc0000",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -1283,7 +1381,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1570554886111-e80fcca6a029?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Best Value",
-      color: "#009900"
+      color: "#009900",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -1296,7 +1395,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1594998893017-36147cbcae05?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "New Arrival",
-      color: "#0066cc"
+      color: "#0066cc",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -1309,7 +1409,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Trending",
-      color: "#ff0099"
+      color: "#ff0099",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -1322,7 +1423,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Limited Edition",
-      color: "#6600cc"
+      color: "#6600cc",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -1335,7 +1437,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Deal of the Day",
-      color: "#e60000"
+      color: "#e60000",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -1348,7 +1451,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Popular",
-      color: "#ff6600"
+      color: "#ff6600",
+      fontColor: "#000000"
     }
   },
   {
@@ -1361,7 +1465,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Top Seller",
-      color: "#ff9900"
+      color: "#ff9900",
+      fontColor: "#000000"
     }
   },
   {
@@ -1374,7 +1479,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Only 3 left",
-      color: "#cc0000"
+      color: "#cc0000",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -1387,7 +1493,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Best Value",
-      color: "#009900"
+      color: "#009900",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -1400,7 +1507,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "New Arrival",
-      color: "#0066cc"
+      color: "#0066cc",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -1413,7 +1521,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Trending",
-      color: "#ff0099"
+      color: "#ff0099",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -1426,7 +1535,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Limited Edition",
-      color: "#6600cc"
+      color: "#6600cc",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -1439,7 +1549,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Deal of the Day",
-      color: "#e60000"
+      color: "#e60000",
+      fontColor: "#ffffff"
     }
   },
   {
@@ -1452,7 +1563,8 @@ export const products = [
     image: "https://images.unsplash.com/photo-1598662957563-ee4965d4d72c?auto=format&fit=crop&w=800&q=80",
     tag: {
       name: "Popular",
-      color: "#ff6600"
+      color: "#ff6600",
+      fontColor: "#000000"
     }
   }
 ];
