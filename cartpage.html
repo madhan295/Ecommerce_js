@@ -6,11 +6,10 @@
  <title>Ecommerce-JS</title>
  <link href="/images/icons/favicon.png" rel="icon">
  <link href="/styles/shared/header.css" rel="stylesheet">
- <link rel="stylesheet" href="/styles/pages/wishlistpage.css">
+ <link rel="stylesheet" href="/styles/pages/cartpage.css">
 </head>
 <body>
-
-  <nav class="navbar">
+ <nav class="navbar">
   <a href="homepage.html">
    <img src="/images/icons/logo.png" alt="logo" class="logo">
   </a>
@@ -40,21 +39,21 @@
  </nav>
 
  <main>
-
   <div class="page-details">
     <div class="page-details-left">
       <p class="heading">Saved Collections</p>
-      <p class="description">Curated products saved for later. Real-time monitoring tracks price dips,
-active promotional discounts, and restock batches automatically.</p>
+      <p class="description">4 items stored for later evaluation & checkout</p>
     </div>
 
     <div class="page-details-right">
-      <span>5 items</span>
+      <img src="/images/icons/close.png" alt="" class="close-icon">
+      <span>Clear</span>
     </div>
   </div>
 
-  <div class="products-grid">
-   <div class="product-container">
+  <div class="main-container">
+   <div class="products-list">
+    <div class="product-container">
     <div class="image-container">
       <div class="product-label">Top Seller</div>
       <img src="/images/products/prod_001.jpg" alt="" class="product-image">
@@ -96,146 +95,136 @@ active promotional discounts, and restock batches automatically.</p>
         <img src="/images/icons/add-to-cart.png" alt="">
         Add to Cart
       </button>
+    </div>
+    </div>
+
+    <div class="product-container">
+    <div class="image-container">
+      <div class="product-label">Top Seller</div>
+      <img src="/images/products/prod_001.jpg" alt="" class="product-image">
+      <div class="close-container">
+        <img src="/images/icons/close.png" alt="" class="close-icon">
+      </div>
+    </div>
+
+    <div class="details">
+      <div class="review">
+        <div class="review-rating">
+          <img src="/images/icons/review-star.png" alt="">
+          <p>4.5</p>
+        </div>
+        <p class="review-count">(1248 reviews)</p>
+      </div>
+
+      <div class="product-spec">
+        <p class="product-name">Sonic Flow ANC Headphone</p>
+        <p class="product-description">Matte Obsidian Active noise cancellation</p>
+      </div>
+
+      <p class="price">$ 199.0</p>
+
+      <div class="quantiy-container">
+        <p class="quantity-labe">Quantity:</p>
+        <div class="quantity-selector">
+          <div class="quantity-adjuster decrease">
+            <p>-</p>
+          </div>
+          <p class="quantity">1</p>
+          <div class="quantity-adjuster increase">
+            <p>+</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="add-to-cart">
+        <img src="/images/icons/add-to-cart.png" alt="">
+        Add to Cart
+      </button>
+    </div>
+    </div>
+
+    <div class="product-container">
+    <div class="image-container">
+      <div class="product-label">Top Seller</div>
+      <img src="/images/products/prod_001.jpg" alt="" class="product-image">
+      <div class="close-container">
+        <img src="/images/icons/close.png" alt="" class="close-icon">
+      </div>
+    </div>
+
+    <div class="details">
+      <div class="review">
+        <div class="review-rating">
+          <img src="/images/icons/review-star.png" alt="">
+          <p>4.5</p>
+        </div>
+        <p class="review-count">(1248 reviews)</p>
+      </div>
+
+      <div class="product-spec">
+        <p class="product-name">Sonic Flow ANC Headphone</p>
+        <p class="product-description">Matte Obsidian Active noise cancellation</p>
+      </div>
+
+      <p class="price">$ 199.0</p>
+
+      <div class="quantiy-container">
+        <p class="quantity-labe">Quantity:</p>
+        <div class="quantity-selector">
+          <div class="quantity-adjuster decrease">
+            <p>-</p>
+          </div>
+          <p class="quantity">1</p>
+          <div class="quantity-adjuster increase">
+            <p>+</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="add-to-cart">
+        <img src="/images/icons/add-to-cart.png" alt="">
+        Add to Cart
+      </button>
+    </div>
     </div>
    </div>
 
-   <div class="product-container">
-    <div class="image-container">
-      <div class="product-label">Top Seller</div>
-      <img src="/images/products/prod_001.jpg" alt="" class="product-image">
-      <div class="close-container">
-        <img src="/images/icons/close.png" alt="" class="close-icon">
-      </div>
+   <div class="cart-summary">
+    <div class="heading-quant">
+     <p>CART SUMMARY</p>
+     <span>4 items</span>
     </div>
 
-    <div class="details">
-      <div class="review">
-        <div class="review-rating">
-          <img src="/images/icons/review-star.png" alt="">
-          <p>4.5</p>
-        </div>
-        <p class="review-count">(1248 reviews)</p>
-      </div>
-
-      <div class="product-spec">
-        <p class="product-name">Sonic Flow ANC Headphone</p>
-        <p class="product-description">Matte Obsidian Active noise cancellation</p>
-      </div>
-
-      <p class="price">$ 199.0</p>
-
-      <div class="quantiy-container">
-        <p class="quantity-labe">Quantity:</p>
-        <div class="quantity-selector">
-          <div class="quantity-adjuster decrease">
-            <p>-</p>
-          </div>
-          <p class="quantity">1</p>
-          <div class="quantity-adjuster increase">
-            <p>+</p>
-          </div>
-        </div>
-      </div>
-
-      <button class="add-to-cart">
+    <div class="prop-price">
+     <p class="charges">
+      Subtotal (4 items)
+     </p>
+     <p class="amount">$476.00</p>
+    </div>
+    <div class="prop-price">
+     <p class="charges">
+      Shippinh & Handling (2%)
+     </p>
+     <p class="amount">$40</p>
+    </div>
+    <div class="prop-price">
+     <p class="charges">
+      Sales Tax (12%)
+     </p>
+     <p class="amount">$86.99</p>
+    </div>
+    
+    <div class="finish-quant">
+     <p>Order Total</p>
+     <span class="total-charge">$490.58</span>
+    </div>
+    <button class="add-to-cart">
         <img src="/images/icons/add-to-cart.png" alt="">
-        Add to Cart
+        Proceed to checkout
       </button>
-    </div>
-   </div>
-
-   <div class="product-container">
-    <div class="image-container">
-      <div class="product-label">Top Seller</div>
-      <img src="/images/products/prod_001.jpg" alt="" class="product-image">
-      <div class="close-container">
-        <img src="/images/icons/close.png" alt="" class="close-icon">
-      </div>
-    </div>
-
-    <div class="details">
-      <div class="review">
-        <div class="review-rating">
-          <img src="/images/icons/review-star.png" alt="">
-          <p>4.5</p>
-        </div>
-        <p class="review-count">(1248 reviews)</p>
-      </div>
-
-      <div class="product-spec">
-        <p class="product-name">Sonic Flow ANC Headphone</p>
-        <p class="product-description">Matte Obsidian Active noise cancellation</p>
-      </div>
-
-      <p class="price">$ 199.0</p>
-
-      <div class="quantiy-container">
-        <p class="quantity-labe">Quantity:</p>
-        <div class="quantity-selector">
-          <div class="quantity-adjuster decrease">
-            <p>-</p>
-          </div>
-          <p class="quantity">1</p>
-          <div class="quantity-adjuster increase">
-            <p>+</p>
-          </div>
-        </div>
-      </div>
-
-      <button class="add-to-cart">
-        <img src="/images/icons/add-to-cart.png" alt="">
-        Add to Cart
-      </button>
-    </div>
-   </div>
-
-   <div class="product-container">
-    <div class="image-container">
-      <div class="product-label">Top Seller</div>
-      <img src="/images/products/prod_001.jpg" alt="" class="product-image">
-      <div class="close-container">
-        <img src="/images/icons/close.png" alt="" class="close-icon">
-      </div>
-    </div>
-
-    <div class="details">
-      <div class="review">
-        <div class="review-rating">
-          <img src="/images/icons/review-star.png" alt="">
-          <p>4.5</p>
-        </div>
-        <p class="review-count">(1248 reviews)</p>
-      </div>
-
-      <div class="product-spec">
-        <p class="product-name">Sonic Flow ANC Headphone</p>
-        <p class="product-description">Matte Obsidian Active noise cancellation</p>
-      </div>
-
-      <p class="price">$ 199.0</p>
-
-      <div class="quantiy-container">
-        <p class="quantity-labe">Quantity:</p>
-        <div class="quantity-selector">
-          <div class="quantity-adjuster decrease">
-            <p>-</p>
-          </div>
-          <p class="quantity">1</p>
-          <div class="quantity-adjuster increase">
-            <p>+</p>
-          </div>
-        </div>
-      </div>
-
-      <button class="add-to-cart">
-        <img src="/images/icons/add-to-cart.png" alt="">
-        Add to Cart
-      </button>
-    </div>
    </div>
   </div>
-
  </main>
- 
+
 </body>
 </html>

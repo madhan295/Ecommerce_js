@@ -1,4 +1,3 @@
-
 *{
  padding: 0;
  margin: 0;
@@ -42,52 +41,38 @@ main {
 
 .page-details-right{
  background-color: white;
+ padding: 6px 20px;
  border-radius: 12px;
- padding: 8px 12px 8px 12px;
+ font-size: 20px;
+ font-weight: bold;
+ width: fit-content;
+ color: #45464D;
  border: solid 2px #E2E8F0;
+ display: flex;
+ align-items: center;
+ gap: 12px;
 }
 
-.sort-label{
- font-size: 16px;
- font-weight: 600;
- color: #94A3B8;
+.page-details-right img {
+ width: 12px;
+ height: 12px;
 }
 
-.sort{
- appearance: none;
- border: none;
- outline: none;
- cursor: pointer;
- padding: 12px;
- font-size: 16px;
-}
 
-/*PRODUCT GRID STARTS HERE*/
+/*Main Content Starts Here*/
 
-.products-grid{
- display: grid;
- grid-template-columns: auto auto auto auto;
+.main-container {
+ display: flex;
+ flex-direction: row;
  gap: 24px;
+ width: 100%;
+ justify-content: space-between;
 }
 
-@media (min-width: 600px) {
-  .products-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-}
-
-@media (min-width: 900px) {
-  .products-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .products-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
+.products-list {
+ display: grid;
+ grid-template-columns: auto auto auto;
+ gap: 12px;
 }
 
 
@@ -100,6 +85,7 @@ main {
  border-radius: 16px;
  border: 1px solid #e2e8f0;
  box-shadow: 0px 1px 2px rgba(00, 00, 00, 5);
+ width: 100%;
 }
 
 .image-container {
@@ -130,7 +116,7 @@ main {
  left: 10px;
 }
 
-.heart-container {
+.close-container {
  border-radius: 50px;
  width: 32px;
  height: 32px;
@@ -144,8 +130,8 @@ main {
  cursor: pointer;
 }
 
-.heart-icon{
- height: 13.76px;
+.close-icon{
+ height: 15px;
  width: 15px;
 }
 
@@ -271,4 +257,66 @@ main {
  border-radius: 12px;
  margin-top: 12px;
  font-weight: bold;
+}
+
+/*CART SUMMMARY*/
+
+.cart-summary {
+ display: flex;
+ flex-direction: column;
+ align-self: flex-start;
+ padding: 16px;
+ gap: 16px;
+ border: 1px solid #E2E8F0;
+ border-radius: 12px;
+ flex: 1;
+}
+
+.heading-quant {
+ border-bottom: 1px solid rgba(198, 198, 205, 0.3);
+ display: flex;
+ padding-bottom: 4px;
+ justify-content: space-between;
+}
+
+.heading-quant p {
+ font-size: 16px;
+ font-weight: bolder;
+ color: #0B1C30;
+}
+
+.heading-quant span {
+ font-size: 12px;
+ font-weight: 600;
+ color: #45464d;
+}
+
+.prop-price {
+ display: flex;
+ justify-content: space-between;
+}
+
+.charges {
+ font-size: 14px;
+ color: #45464d;
+}
+
+.amount {
+ font-size: 16px;
+ font-weight: 700;
+ color: #0B1C30;
+}
+
+.finish-quant {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding-top: 8px;
+ border-top: 1px solid rgba(198, 198, 205, 0.3);
+}
+
+.total-charge {
+ font-size: 28px;
+ font-weight: bold;
+ color: #0B1C30;
 }
