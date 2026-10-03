@@ -6,11 +6,11 @@
  <title>Ecommerce-JS</title>
  <link href="/images/icons/favicon.png" rel="icon">
  <link href="/styles/shared/header.css" rel="stylesheet">
- <link href="/styles/pages/homepage.css" rel="stylesheet">
+ <link rel="stylesheet" href="/styles/pages/wishlistpage.css">
 </head>
 <body>
 
- <nav class="navbar">
+  <nav class="navbar">
   <a href="homepage.html">
    <img src="/images/icons/logo.png" alt="logo" class="logo">
   </a>
@@ -38,35 +38,28 @@
    </a> 
   </div>
  </nav>
- 
+
  <main>
-  
+
   <div class="page-details">
     <div class="page-details-left">
-      <p class="heading">Products Catalog</p>
-      <p class="description">Select your desired quantity directly on each product card and add to you cart.</p>
+      <p class="heading">Saved Collections</p>
+      <p class="description">Curated products saved for later. Real-time monitoring tracks price dips,
+active promotional discounts, and restock batches automatically.</p>
     </div>
 
     <div class="page-details-right">
-      <label for="sort" class="sort-label">Sort by:</label>
-        <select name="sort" id="sort" class="sort">
-          <option value="pricelowtohigh">Price low to high</option>
-          <option value="pricehightolow">Price high to low</option>
-          <option value="reviewhightolow">Review high to low</option>
-          <option value="reviewlowtohigh">Review low to high</option>
-        </select>
-      </label>
+      <span>5 items</span>
     </div>
   </div>
 
   <div class="products-grid">
-
    <div class="product-container">
     <div class="image-container">
       <div class="product-label">Top Seller</div>
       <img src="/images/products/prod_001.jpg" alt="" class="product-image">
-      <div class="heart-container">
-        <img src="/images/icons/wishlist.png" alt="" class="heart-icon">
+      <div class="close-container">
+        <img src="/images/icons/close.png" alt="" class="close-icon">
       </div>
     </div>
 
@@ -110,8 +103,8 @@
     <div class="image-container">
       <div class="product-label">Top Seller</div>
       <img src="/images/products/prod_001.jpg" alt="" class="product-image">
-      <div class="heart-container">
-        <img src="/images/icons/wishlist.png" alt="" class="heart-icon">
+      <div class="close-container">
+        <img src="/images/icons/close.png" alt="" class="close-icon">
       </div>
     </div>
 
@@ -155,8 +148,8 @@
     <div class="image-container">
       <div class="product-label">Top Seller</div>
       <img src="/images/products/prod_001.jpg" alt="" class="product-image">
-      <div class="heart-container">
-        <img src="/images/icons/wishlist.png" alt="" class="heart-icon">
+      <div class="close-container">
+        <img src="/images/icons/close.png" alt="" class="close-icon">
       </div>
     </div>
 
@@ -200,8 +193,8 @@
     <div class="image-container">
       <div class="product-label">Top Seller</div>
       <img src="/images/products/prod_001.jpg" alt="" class="product-image">
-      <div class="heart-container">
-        <img src="/images/icons/wishlist.png" alt="" class="heart-icon">
+      <div class="close-container">
+        <img src="/images/icons/close.png" alt="" class="close-icon">
       </div>
     </div>
 
@@ -241,7 +234,8 @@
     </div>
    </div>
   </div>
-  
+
  </main>
+ 
 </body>
 </html>
