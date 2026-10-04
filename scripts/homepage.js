@@ -153,6 +153,14 @@ document.querySelectorAll('.js-add-to-cart-button').forEach((button) => {
     quantity: 1
    })
   }
+
+  let quantity = 0;
+  cart.forEach((cartItem) => {
+   quantity += cartItem.quantity;
+  })
+
+  document.querySelector('.js-quantity-counter').innerHTML = quantity;
+
   console.log(cart);
  });
 });
