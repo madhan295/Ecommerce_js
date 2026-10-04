@@ -1,5 +1,6 @@
 import { cart } from "./cart.js";
 import { products } from "../data/product.js";
+import { decreaseCartQuantity, increaseCartQuantity } from "./utils/quantitySelector.js";
 
 let mainHTML = '';
 
@@ -39,23 +40,33 @@ cart.forEach((cartItem) => {
       <div class="quantiy-container">
         <p class="quantity-labe">Quantity:</p>
         <div class="quantity-selector">
-          <div class="quantity-adjuster decrease">
+          <div class="quantity-adjuster decrease js-decrease" data-product-id ="${matchingItem.id}">
             <p>-</p>
           </div>
-          <p class="quantity">1</p>
-          <div class="quantity-adjuster increase">
+          <p class="quantity js-quantity js-quantity-${matchingItem.id}">1</p>
+          <div class="quantity-adjuster increase js-increase" data-product-id ="${matchingItem.id}">
             <p>+</p>
           </div>
         </div>
       </div>
 
-      <button class="add-to-cart">
-        <img src="/images/icons/add-to-cart.png" alt="">
-        Add to Cart
-      </button>
     </div>
     </div>
     `;
 });
 
 document.querySelector('.js-product-list').innerHTML = mainHTML;
+
+document.querySelectorAll('.js-decrease').forEach((button) => {
+ button.addEventListener('click', () => {
+  const productId = button.dataset.productId;
+  decreaseCartQuantity(productId);
+ });
+});
+
+document.querySelectorAll('.js-increase').forEach((button) => {
+ button.addEventListener('click', () => {
+  const productId = button.dataset.productId;
+  increaseCartQuantity(productId);
+ });
+});
