@@ -135,6 +135,8 @@ products.forEach((product) => {
 
 document.querySelector('.js-products-grid').innerHTML = productHTML;
 
+//ADD TO CART BUTTON
+
 document.querySelectorAll('.js-add-to-cart-button').forEach((button) => {
  button.addEventListener('click', ()=>{
   const productId = button.dataset.productId;
@@ -165,9 +167,17 @@ document.querySelectorAll('.js-add-to-cart-button').forEach((button) => {
  });
 });
 
-document.querySelectorAll('.js-heart-container').forEach((wishlist) => {
- wishlist.addEventListener('click', () => {
-  //const productId = wishlist.dataset.productId;
-  wishlist.classList.toggle('active');
+//WISHLIST BUTTON
+
+document.querySelectorAll('.js-heart-container').forEach((button) => {
+ button.addEventListener('click', () => {
+  const productId = button.dataset.productId;
+  button.classList.toggle('active');
+
+  const index = wishlistProducts.indexOf(productId);
+  if(index !== -1) wishlistProducts.splice(index, 1);
+  else wishlistProducts.push(productId);
+
+  document.querySelector('.js-wishlist-counter').innerHTML = wishlistProducts.length;
  });
 });
