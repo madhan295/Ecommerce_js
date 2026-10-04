@@ -125,7 +125,7 @@ products.forEach((product) => {
         </div>
       </div>
 
-      <button class="add-to-cart">
+      <button class="add-to-cart js-add-to-cart-button" data-product-id ="${product.id}">
         <img src="/images/icons/add-to-cart.png" alt="">
         Add to Cart
       </button>
@@ -133,4 +133,11 @@ products.forEach((product) => {
    </div>`;
 });
 
-document.querySelector('.products-grid').innerHTML = productHTML;
+document.querySelector('.js-products-grid').innerHTML = productHTML;
+
+document.querySelectorAll('.js-add-to-cart-button').forEach((button) => {
+ button.addEventListener('click', ()=>{
+  const productId = button.dataset.productId;
+  console.log(productId);
+ });
+});
