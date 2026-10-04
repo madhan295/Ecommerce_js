@@ -1,1 +1,1 @@
-let wishlistProducts = [];
+export const wishlistProducts = [];

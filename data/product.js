@@ -1,4 +1,4 @@
-const products = [
+export const products = [
   {
     id: "prod_001",
     name: "Noise-Canceling Over-Ear Headphones",
