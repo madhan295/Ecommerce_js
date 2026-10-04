@@ -33,11 +33,11 @@ products.forEach((product) => {
       <div class="quantiy-container">
         <p class="quantity-labe">Quantity:</p>
         <div class="quantity-selector">
-          <div class="quantity-adjuster decrease">
+          <div class="quantity-adjuster decrease js-decrease" data-product-id ="${product.id}">
             <p>-</p>
           </div>
-          <p class="quantity">1</p>
-          <div class="quantity-adjuster increase">
+          <p class="quantity js-quantity js-quantity-${product.id}">1</p>
+          <div class="quantity-adjuster increase js-increase" data-product-id ="${product.id}">
             <p>+</p>
           </div>
         </div>
@@ -55,22 +55,45 @@ document.querySelector('.js-products-grid').innerHTML = productHTML;
 
 //ADD TO CART BUTTON
 
+
+document.querySelectorAll('.js-decrease').forEach((button) => {
+ button.addEventListener('click', () => {
+  const productId = button.dataset.productId;
+  const quantityEl = document.querySelector(`.js-quantity-${productId}`);
+  const currentQuantity = Number(quantityEl.innerText);
+  if(currentQuantity > 1){
+   quantityEl.innerText = currentQuantity -= 1; 
+ }
+ });
+});
+
+document.querySelectorAll('.js-increase').forEach((button) => {
+ button.addEventListener('click', () => {
+  const productId = button.dataset.productId;
+  const quantityEl = document.querySelector(`.js-quantity-${productId}`);
+  const currentQuantity = Number(quantityEl.innerText);
+  quantityEl.innerText= currentQuantity + 1;
+ });
+});
+
 document.querySelectorAll('.js-add-to-cart-button').forEach((button) => {
  button.addEventListener('click', ()=>{
   const productId = button.dataset.productId;
 
-  let matchingItem;
+  const quantityEl = document.querySelector(`.js-quantity-${productId}`);
+  const selectedQuantity = Number(quantityEl.innerHTML);
 
+  let matchingItem;
   cart.forEach((cartItem) => {
    if(cartItem.productId == productId) matchingItem = cartItem;
   });
 
   if(matchingItem) {
-   matchingItem.quantity += 1;
+   matchingItem.quantity += selectedQuantity;
   } else {
    cart.push({
     productId: productId,
-    quantity: 1
+    quantity: selectedQuantity
    })
   }
 
