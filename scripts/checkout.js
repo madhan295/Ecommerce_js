@@ -1,0 +1,61 @@
+import { cart } from "./cart.js";
+import { products } from "../data/product.js";
+
+let mainHTML = '';
+
+cart.forEach((cartItem) => {
+ let matchingItem;
+
+ products.forEach((item) => {
+  if(cartItem.id === item.id) matchingItem = item;
+ });
+
+ mainHTML += `
+ <div class="product-container">
+    <div class="image-container">
+      <div class="product-label">Top Seller</div>
+      <img src="${matchingItem.image}" alt="" class="product-image">
+      <div class="close-container">
+        <img src="/images/icons/close.png" alt="" class="close-icon">
+      </div>
+    </div>
+
+    <div class="details">
+      <div class="review">
+        <div class="review-rating">
+          <img src="/images/icons/review-star.png" alt="">
+          <p>${matchingItem.rating.rate}</p>
+        </div>
+        <p class="review-count">(${matchingItem.rating.count})</p>
+      </div>
+
+      <div class="product-spec">
+        <p class="product-name">${matchingItem.name}</p>
+        <p class="product-description">${matchingItem.description}</p>
+      </div>
+
+      <p class="price">$${matchingItem.price}</p>
+
+      <div class="quantiy-container">
+        <p class="quantity-labe">Quantity:</p>
+        <div class="quantity-selector">
+          <div class="quantity-adjuster decrease">
+            <p>-</p>
+          </div>
+          <p class="quantity">1</p>
+          <div class="quantity-adjuster increase">
+            <p>+</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="add-to-cart">
+        <img src="/images/icons/add-to-cart.png" alt="">
+        Add to Cart
+      </button>
+    </div>
+    </div>
+    `;
+});
+
+document.querySelector('.js-product-list').innerHTML = mainHTML;
