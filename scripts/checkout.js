@@ -14,7 +14,7 @@ cart.forEach((cartItem) => {
  mainHTML += `
  <div class="product-container">
     <div class="image-container">
-      <div class="product-label">Top Seller</div>
+      <div class="product-label" style="background-color: ${matchingItem.tag.color}; color: ${matchingItem.tag.fontColor}">${matchingItem.tag.name}</div>
       <img src="${matchingItem.image}" alt="" class="product-image">
       <div class="close-container">
         <img src="/images/icons/close.png" alt="" class="close-icon">
@@ -70,3 +70,10 @@ document.querySelectorAll('.js-increase').forEach((button) => {
   increaseCartQuantity(productId);
  });
 });
+
+let quantity = 0;
+cart.forEach((cartItem) => {
+ quantity += cartItem.quantity;
+});
+
+document.querySelector('.js-cartSummary-quantity').innerText = quantity;
