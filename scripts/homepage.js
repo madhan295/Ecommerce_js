@@ -91,7 +91,7 @@ products.forEach((product) => {
     <div class="image-container">
       <div class="product-label" style="background-color: ${product.tag.color}; color: ${product.tag.fontColor}">${product.tag.name}</div>
       <img src="${product.image}" alt="" class="product-image">
-      <div class="heart-container">
+      <div class="heart-container js-heart-container" data-product-id="${product.id}">
         <img src="/images/icons/wishlist.png" alt="" class="heart-icon">
       </div>
     </div>
@@ -162,5 +162,12 @@ document.querySelectorAll('.js-add-to-cart-button').forEach((button) => {
   document.querySelector('.js-quantity-counter').innerHTML = quantity;
 
   console.log(cart);
+ });
+});
+
+document.querySelectorAll('.js-heart-container').forEach((wishlist) => {
+ wishlist.addEventListener('click', () => {
+  //const productId = wishlist.dataset.productId;
+  wishlist.classList.toggle('active');
  });
 });

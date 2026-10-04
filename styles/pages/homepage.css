@@ -144,9 +144,17 @@ main {
  cursor: pointer;
 }
 
+.heart-container.active {
+  background-color: #ff334b;
+}
+
 .heart-icon{
  height: 13.76px;
  width: 15px;
+}
+
+.heart-container.active .heart-icon {
+  filter: invert(1);
 }
 
 .details{
