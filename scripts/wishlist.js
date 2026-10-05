@@ -1,15 +1,7 @@
 import { products } from "../data/product.js";
+import { wishlistProducts } from "./wishlistproducts.js";
 import { cart, addToCart } from "./cart.js";
 import { increaseCartQuantity, decreaseCartQuantity } from "./utils/quantitySelector.js";
-
-export const wishlistProducts = [{
- id: "prod_072",
- quantity: 1
-}, {
- id: "prod_033",
- quantity: 1
-}];
-
 let productContainerHTML = '';
 
 wishlistProducts.forEach((wishListItem) => {

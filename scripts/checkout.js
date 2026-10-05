@@ -1,4 +1,4 @@
-import { cart } from "./cart.js";
+import { cart, removeFromCart } from "./cart.js";
 import { products } from "../data/product.js";
 import { decreaseCartQuantity, increaseCartQuantity } from "./utils/quantitySelector.js";
 
@@ -12,12 +12,12 @@ cart.forEach((cartItem) => {
  });
 
  mainHTML += `
- <div class="product-container">
+ <div class="product-container js-product-container-${matchingItem.id}">
     <div class="image-container">
       <div class="product-label" style="background-color: ${matchingItem.tag.color}; color: ${matchingItem.tag.fontColor}">${matchingItem.tag.name}</div>
       <img src="${matchingItem.image}" alt="" class="product-image">
       <div class="close-container">
-        <img src="/images/icons/close.png" alt="" class="close-icon">
+        <img src="/images/icons/close.png" alt="" class="close-icon js-close-icon" data-product-id ="${matchingItem.id}">
       </div>
     </div>
 
@@ -77,3 +77,12 @@ cart.forEach((cartItem) => {
 });
 
 document.querySelector('.js-cartSummary-quantity').innerText = quantity;
+
+document.querySelectorAll('.js-close-icon').forEach((button) => {
+  button.addEventListener('click', () => {
+    const productId = button.dataset.productId;
+    removeFromCart(productId);
+    const container = document.querySelector(`.js-product-container-${productId}`);
+    container.remove();
+  });
+})
