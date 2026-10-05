@@ -1,6 +1,6 @@
 import { products } from "../data/product.js";
 import { wishlistProducts } from "./wishlistproducts.js";
-import { cart, addToCart } from "./cart.js";
+import { cart, addToCart, saveToCart } from "./cart.js";
 import { increaseCartQuantity, decreaseCartQuantity } from "./utils/quantitySelector.js";
 let productContainerHTML = '';
 

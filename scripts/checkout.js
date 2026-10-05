@@ -1,4 +1,4 @@
-import { cart, removeFromCart } from "./cart.js";
+import { cart, removeFromCart, saveToCart } from "./cart.js";
 import { products } from "../data/product.js";
 import { decreaseCartQuantity, increaseCartQuantity } from "./utils/quantitySelector.js";
 
