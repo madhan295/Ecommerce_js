@@ -1,15 +1,23 @@
 import { products } from "../data/product.js";
-import { wishlistProducts } from "./wishlistproducts.js";
+import { wishlistProducts, wishlistQuantity } from "./wishlistproducts.js";
 import { cart, addToCart, saveToCart, cartQuantityFind } from "./cart.js";
 import { increaseCartQuantity, decreaseCartQuantity } from "./utils/quantitySelector.js";
 let productContainerHTML = '';
 
 wishlistProducts.forEach((wishListItem) => {
- let matchingItem;
+ const targetId = typeof wishListItem === 'object' ? (wishListItem.productId || wishListItem.id) : wishListItem;
 
- products.forEach((product) => {
-  if(product.id === wishListItem.id) matchingItem = product;
- });
+  let matchingItem;
+  products.forEach((product) => {
+    if (product.id === targetId) {
+      matchingItem = product;
+    }
+  });
+
+  if (!matchingItem) {
+    console.warn('Product not found in catalog for item:', targetId);
+    return;
+  }
 
  productContainerHTML += `
  <div class="product-container">
@@ -58,6 +66,7 @@ wishlistProducts.forEach((wishListItem) => {
    </div>
  `;
 });
+console.log(wishlistProducts);
 
 document.querySelector('.js-products-grid').innerHTML = productContainerHTML;
 
@@ -83,13 +92,12 @@ document.querySelectorAll('.js-add-to-cart-button').forEach((button) => {
   const selectedQuantity = Number(quantityEl.innerHTML);
 
   addToCart(productId, selectedQuantity);
-
   document.querySelector('.js-quantity-counter').innerHTML = cartQuantityFind();
  });
 });
 
 document.querySelector('.js-quantity-counter').innerHTML = cartQuantityFind();
 
-document.querySelector('.js-wishlist-count').innerText = `${wishlistProducts.length} items`;
+document.querySelector('.js-wishlist-count').innerText = `${wishlistQuantity()} items`;
 
-document.querySelector('.js-wishlist-counter').innerText = wishlistProducts.length;
+document.querySelector('.js-wishlist-counter').innerText = wishlistQuantity();

@@ -1,7 +1,7 @@
 import { products } from "../data/product.js";
 import { cart, addToCart, saveToCart, cartQuantityFind } from "./cart.js";
 import { increaseCartQuantity, decreaseCartQuantity } from "./utils/quantitySelector.js";
-import { wishlistProducts } from "./wishlistproducts.js";
+import { saveToWishList, wishlistProducts, wishlistQuantity } from "./wishlistproducts.js";
 
 let productHTML = '';
 
@@ -96,10 +96,17 @@ document.querySelectorAll('.js-heart-container').forEach((button) => {
   const productId = button.dataset.productId;
   button.classList.toggle('active');
 
-  const index = wishlistProducts.indexOf(productId);
-  if(index !== -1) wishlistProducts.splice(index, 1);
-  else wishlistProducts.push(productId);
-
-  document.querySelector('.js-wishlist-counter').innerHTML = wishlistProducts.length;
+  const index = wishlistProducts.findIndex((item) => item.productId === productId);
+  if (index !== -1) {
+    wishlistProducts.splice(index, 1);
+  } else {
+    wishlistProducts.push({
+      productId: productId
+    });
+  }
+  saveToWishList();
+  document.querySelector('.js-wishlist-counter').innerHTML = wishlistQuantity();
  });
 });
+
+document.querySelector('.js-wishlist-counter').innerHTML = wishlistQuantity();
