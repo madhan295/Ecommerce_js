@@ -1,4 +1,4 @@
-import { cart, removeFromCart, saveToCart } from "./cart.js";
+import { cart, removeFromCart, saveToCart, cartQuantityFind } from "./cart.js";
 import { products } from "../data/product.js";
 import { decreaseCartQuantity, increaseCartQuantity } from "./utils/quantitySelector.js";
 
@@ -8,7 +8,10 @@ cart.forEach((cartItem) => {
  let matchingItem;
 
  products.forEach((item) => {
-  if(cartItem.id === item.id) matchingItem = item;
+  const cartItemId = cartItem.productId || cartItem.id;
+    if (cartItemId === item.id) {
+      matchingItem = item;
+    }
  });
 
  mainHTML += `
@@ -71,12 +74,8 @@ document.querySelectorAll('.js-increase').forEach((button) => {
  });
 });
 
-let quantity = 0;
-cart.forEach((cartItem) => {
- quantity += cartItem.quantity;
-});
-
-document.querySelector('.js-cartSummary-quantity').innerText = quantity;
+document.querySelector('.js-cartSummary-quantity').innerText = cartQuantityFind();
+document.querySelector('.js-quantity-counter').innerHTML = cartQuantityFind();
 
 document.querySelectorAll('.js-close-container').forEach((button) => {
   button.addEventListener('click', () => {
