@@ -1,6 +1,6 @@
 import { products } from "../data/product.js";
-import { cart, addToCart } from "./cart.js";
-import { increaseCartQuantity } from "./utils/quantitySelector.js";
+import { cart, addToCart, saveToCart, cartQuantityFind } from "./cart.js";
+import { increaseCartQuantity, decreaseCartQuantity } from "./utils/quantitySelector.js";
 import { wishlistProducts } from "./wishlistproducts.js";
 
 let productHTML = '';
@@ -80,14 +80,14 @@ document.querySelectorAll('.js-add-to-cart-button').forEach((button) => {
 
   addToCart(productId, selectedQuantity);
 
-  let quantity = 0;
-  cart.forEach((cartItem) => {
-   quantity += cartItem.quantity;
-  })
-
+  let quantity = cartQuantityFind();
   document.querySelector('.js-quantity-counter').innerHTML = quantity;
+  console.log(cart);
  });
 });
+
+let quantity = cartQuantityFind();
+document.querySelector('.js-quantity-counter').innerHTML = quantity;
 
 //WISHLIST BUTTON
 
