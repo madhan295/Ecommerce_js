@@ -16,8 +16,8 @@ cart.forEach((cartItem) => {
     <div class="image-container">
       <div class="product-label" style="background-color: ${matchingItem.tag.color}; color: ${matchingItem.tag.fontColor}">${matchingItem.tag.name}</div>
       <img src="${matchingItem.image}" alt="" class="product-image">
-      <div class="close-container">
-        <img src="/images/icons/close.png" alt="" class="close-icon js-close-icon" data-product-id ="${matchingItem.id}">
+      <div class="close-container js-close-container" data-product-id ="${matchingItem.id}">
+        <img src="/images/icons/close.png" alt="" class="close-icon js-close-icon">
       </div>
     </div>
 
@@ -78,7 +78,7 @@ cart.forEach((cartItem) => {
 
 document.querySelector('.js-cartSummary-quantity').innerText = quantity;
 
-document.querySelectorAll('.js-close-icon').forEach((button) => {
+document.querySelectorAll('.js-close-container').forEach((button) => {
   button.addEventListener('click', () => {
     const productId = button.dataset.productId;
     removeFromCart(productId);

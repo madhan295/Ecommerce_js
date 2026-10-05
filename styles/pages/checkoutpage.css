@@ -62,17 +62,16 @@ main {
 /*Main Content Starts Here*/
 
 .main-container {
- display: flex;
- flex-direction: row;
+ display: grid;
+ grid-template-columns: 1fr 400px;
  gap: 24px;
  width: 100%;
- justify-content: space-between;
 }
 
 .products-list {
  display: grid;
- grid-template-columns: auto auto auto;
- gap: 12px;
+ grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+ gap: 20px;
 }
 
 
@@ -270,6 +269,7 @@ main {
  border: 1px solid #E2E8F0;
  border-radius: 12px;
  flex: 1;
+ position: sticky;
 }
 
 .heading-quant {

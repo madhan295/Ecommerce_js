@@ -7,6 +7,15 @@ export let cart = [{
 }, {
  id: "prod_094",
  quantity: 1
+}, {
+ id: "prod_092",
+ quantity: 1
+}, {
+ id: "prod_093",
+ quantity: 1
+}, {
+ id: "prod_094",
+ quantity: 1
 }];
 
 export function addToCart(productId, selectedQuantity) {
