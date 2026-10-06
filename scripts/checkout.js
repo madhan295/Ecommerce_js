@@ -6,10 +6,12 @@ let mainHTML = '';
 
 cart.forEach((cartItem) => {
  let matchingItem;
+ let cartProductQuantity;
 
  products.forEach((item) => {
   const cartItemId = cartItem.productId || cartItem.id;
     if (cartItemId === item.id) {
+      cartProductQuantity = cartItem.quantity;
       matchingItem = item;
     }
  });
@@ -46,7 +48,7 @@ cart.forEach((cartItem) => {
           <div class="quantity-adjuster decrease js-decrease" data-product-id ="${matchingItem.id}">
             <p>-</p>
           </div>
-          <p class="quantity js-quantity js-quantity-${matchingItem.id}">1</p>
+          <p class="quantity js-quantity js-quantity-${matchingItem.id}">${cartProductQuantity}</p>
           <div class="quantity-adjuster increase js-increase" data-product-id ="${matchingItem.id}">
             <p>+</p>
           </div>
