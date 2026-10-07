@@ -2,22 +2,22 @@ export let cart = JSON.parse(localStorage.getItem('cart'));
 
 if(!cart) {
  cart = [{
- id: "prod_092",
+ productId: "prod_092",
  quantity: 1
 }, {
- id: "prod_093",
+ productId: "prod_093",
  quantity: 1
 }, {
- id: "prod_094",
+ productId: "prod_094",
  quantity: 1
 }, {
- id: "prod_095",
+ productId: "prod_095",
  quantity: 1
 }, {
- id: "prod_101",
+ productId: "prod_101",
  quantity: 1
 }, {
- id: "prod_090",
+ productId: "prod_090",
  quantity: 1
 }];
 }
@@ -49,7 +49,7 @@ export function addToCart(productId, selectedQuantity) {
 export function removeFromCart(productId) {
  let newCart = [];
  cart.forEach((cartItem) => {
-  if(cartItem.id != productId) newCart.push(cartItem);
+  if(cartItem.productId != productId) newCart.push(cartItem);
  });
  cart = newCart;
  saveToCart();

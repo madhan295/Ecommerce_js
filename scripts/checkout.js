@@ -9,7 +9,7 @@ cart.forEach((cartItem) => {
  let cartProductQuantity;
 
  products.forEach((item) => {
-  const cartItemId = cartItem.productId || cartItem.id;
+  const cartItemId = cartItem.productId;
     if (cartItemId === item.id) {
       cartProductQuantity = cartItem.quantity;
       matchingItem = item;

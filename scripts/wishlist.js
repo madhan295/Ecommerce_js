@@ -5,7 +5,7 @@ import { increaseCartQuantity, decreaseCartQuantity } from "./utils/quantitySele
 let productContainerHTML = '';
 
 wishlistProducts.forEach((wishListItem) => {
- const targetId = typeof wishListItem === 'object' ? (wishListItem.productId || wishListItem.id) : wishListItem;
+ const targetId = wishListItem.productId;
 
   let matchingItem;
   products.forEach((product) => {
