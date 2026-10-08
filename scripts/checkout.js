@@ -1,6 +1,7 @@
 import { cart, removeFromCart, saveToCart, cartQuantityFind } from "./cart.js";
 import { products } from "../data/product.js";
 import { decreaseCartQuantity, increaseCartQuantity } from "./utils/quantitySelector.js";
+import { wishlistQuantity } from "./wishlistproducts.js";
 
 let mainHTML = '';
 
@@ -87,3 +88,5 @@ document.querySelectorAll('.js-close-container').forEach((button) => {
     container.remove();
   });
 })
+
+document.querySelector('.js-wishlist-counter').innerText = wishlistQuantity();
