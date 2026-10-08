@@ -1,5 +1,5 @@
 import { products } from "../data/product.js";
-import { wishlistProducts, wishlistQuantity } from "./wishlistproducts.js";
+import { removeFromWishlist, saveToWishList, wishlistProducts, wishlistQuantity } from "./wishlistproducts.js";
 import { cart, addToCart, saveToCart, cartQuantityFind } from "./cart.js";
 import { increaseCartQuantity, decreaseCartQuantity } from "./utils/quantitySelector.js";
 let productContainerHTML = '';
@@ -20,11 +20,11 @@ wishlistProducts.forEach((wishListItem) => {
   }
 
  productContainerHTML += `
- <div class="product-container">
+ <div class="product-container js-product-container-${matchingItem.id}">
     <div class="image-container">
       <div class="product-label" style="background-color: ${matchingItem.tag.color}; color: ${matchingItem.tag.fontColor}">${matchingItem.tag.name}</div>
       <img src="${matchingItem.image}" alt="" class="product-image">
-      <div class="close-container">
+      <div class="close-container js-close-icon" data-product-id=${matchingItem.id}>
         <img src="/images/icons/close.png" alt="" class="close-icon">
       </div>
     </div>
@@ -66,7 +66,6 @@ wishlistProducts.forEach((wishListItem) => {
    </div>
  `;
 });
-console.log(wishlistProducts);
 
 document.querySelector('.js-products-grid').innerHTML = productContainerHTML;
 
@@ -101,3 +100,12 @@ document.querySelector('.js-quantity-counter').innerHTML = cartQuantityFind();
 document.querySelector('.js-wishlist-count').innerText = `${wishlistQuantity()} items`;
 
 document.querySelector('.js-wishlist-counter').innerText = wishlistQuantity();
+
+document.querySelectorAll('.js-close-icon').forEach((closeButton) => {
+  closeButton.addEventListener('click', () => {
+    const productId = closeButton.dataset.productId;
+    removeFromWishlist(productId);
+    const container = document.querySelector(`.js-product-container-${productId}`);
+    container.remove();
+  });
+});
