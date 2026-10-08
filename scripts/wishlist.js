@@ -107,5 +107,9 @@ document.querySelectorAll('.js-close-icon').forEach((closeButton) => {
     removeFromWishlist(productId);
     const container = document.querySelector(`.js-product-container-${productId}`);
     container.remove();
+    
+    // Update the wishlist counts instantly
+    document.querySelector('.js-wishlist-count').innerText = `${wishlistQuantity()} items`;
+    document.querySelector('.js-wishlist-counter').innerText = wishlistQuantity();
   });
 });
